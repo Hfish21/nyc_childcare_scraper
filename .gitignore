@@ -169,3 +169,21 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+NYCH/raw_data/*
+!NYCH/raw_data/.gitkeep
+
+NYCH/result_data/*
+!NYCH/result_data/.gitkeep
+
+
+
+OCFS/raw_data/*
+!NYCH/raw_data/.gitkeep
+
+OCFS/result_data/*
+!NYCH/result_data/.gitkeep
+
+results_final.csv
+
+.DS_Store
