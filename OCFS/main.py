@@ -40,8 +40,8 @@ def main():
     program_types = ["Family Day Care", "Group Family Day Care", "School-Age Child Care"]
 
     # Scrape provider IDs for specified counties and program types
-    for county in counties[:1]:
-        for program_type in program_types[:1]:
+    for county in counties:
+        for program_type in program_types:
             logging.info(f"Scraping data for {county}, {program_type}...")
             scrape_provider_ids(county, program_type)
 
@@ -50,7 +50,7 @@ def main():
     total_ids = len(provider_ids)
 
     logging.info(f"Starting scraping process for {total_ids} provider IDs.")
-    for index, provider_id in enumerate(provider_ids[:5], start=1):  # Limiting to first 5 IDs for testing
+    for index, provider_id in enumerate(provider_ids, start=1):  # Limiting to first 5 IDs for testing
         try:
             logging.info(f"Scraping profile for provider ID {provider_id} ({index}/{total_ids})")
 

@@ -12,8 +12,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 # Set up Chrome options
 chrome_options = webdriver.ChromeOptions()
-# Uncomment the next line to run Chrome in headless mode for non-interactive environments
-# chrome_options.add_argument("--headless")  
+chrome_options.add_argument("--headless")  
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
