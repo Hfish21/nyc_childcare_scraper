@@ -96,41 +96,32 @@ README.md            # This documentation
 
 ### Running `NYCH/main.py`
 
-1. Navigate to the `NYCH` directory:
+
+1. Run the main script:
    ```bash
-   cd NYCH
+   python NYCH/main.py
    ```
 
-2. Run the main script:
-   ```bash
-   python main.py
-   ```
-
-3. Outputs:
+2. Outputs:
    - Raw scraped data will be saved in `NYCH/raw_data/` (e.g., `raw_providers.csv`).
    - Transformed data will be saved in `NYCH/result_data/` (e.g., `NYCH_result_data.csv`).
 
-4. Note: If you encounter network or connection issues, check your internet connection and ensure the URL is accessible.
+3. Note: If you encounter network or connection issues, check your internet connection and ensure the URL is accessible.
 
 ---
 
 ### Running `OCFS/main.py`
 
-1. Navigate to the `OCFS` directory:
+1. Run the main script:
    ```bash
-   cd OCFS
+   python OCFS/main.py
    ```
 
-2. Run the main script:
-   ```bash
-   python main.py
-   ```
-
-3. Outputs:
+2. Outputs:
    - Raw scraped data will be saved in `OCFS/raw_data/` (e.g., `provider_ids.csv`).
    - Transformed data will be saved in `OCFS/result_data/` (e.g., `OCFS_result_data.csv`).
 
-4. Note: Ensure `chromedriver` is installed and accessible. Update the `chromedriver_path` in `OCFS/scrapers.py` if necessary.
+3. Note: Ensure `chromedriver` is installed and accessible. Update the `chromedriver_path` in `OCFS/scrapers.py` if necessary.
 
 ---
 
